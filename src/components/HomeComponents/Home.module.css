@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+.heroContainer {
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: 4rem;
+    width: 100%;
+    margin-bottom: 10rem;
+
+
+}
+
+
+.heroContainer:first-child {
+    margin-bottom: 15rem;
+}
+
+.heroContainer:nth-child(2) {
+    gap: 4rem;
+}
+
+
+
+.heroHalf {
+    width: 100%;
+    flex: 0.5;
+
+    position: relative;
+}
+
+
+.heroHalf:first-child h1:first-child{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+
+.heroHalf:first-child h1:nth-child(2){
+    color: #000;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.heroHalf:first-child h1:nth-child(3){
+    color: #000;
+    font-family: Nanum Pen;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.underlineCurve {
+    width: 438px;
+    height: 52.574px;
+    flex-shrink: 0;
+    fill: #FC8745;
+    stroke-width: 10px;
+    stroke: #FC8745;
+}
+
+.generateBtn {
+    border-radius: 70px;
+    border: 1px solid #863D15;
+    background: radial-gradient(37.50% 37.50% at 58.13% 90.22%, rgba(222, 169, 66, 0.20) 0%, rgba(171, 133, 58, 0.00) 100%), linear-gradient(95deg, #FC8745 0%, #FFB78E 45.83%, #ED7B3B 100%);
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.50) inset;
+    width: 207px;
+    height: 54px;
+    flex-shrink: 0;
+    border-color: 1px solid #863D15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.heroImg {
+    position: absolute;
+    width: 145%;
+    right: -80px;
+
+
+}
+
+.secondSectionTexts h1:first-child{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.culinaryAdventure {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.adventureTexts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.secondSectionTexts p {
+    width: 645px;
+    height: 217px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139.9%; /* 44.768px */
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.thirdSectionContainer {
+
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.thirdSectionContainer h2:first-child{
+    color: #FC8745;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.youText {
+    display: flex;
+    flex-direction: row;
+}
+
+.youTexts {
+    margin-left: 2rem;
+}
+
+.youText h1 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.backgroundShape {
+    position: absolute;
+    z-index: -20;
+
+
+}
+
+.testiContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+
+
+
+}
+
+.testHalf {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testHalf:first-child {
+    padding: 5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.testHalf:first-child p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 139.9%; /* 44.768px */
+
+}
+
+.testHalf:first-child p:nth-child(2) {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 139.9%;
+    margin-top: 4rem;
+}

@@ -1,0 +1,19 @@
+.generateBtn {
+    border-radius: 70px;
+    border: 1px solid #863D15;
+    background: radial-gradient(37.50% 37.50% at 58.13% 90.22%, rgba(222, 169, 66, 0.20) 0%, rgba(171, 133, 58, 0.00) 100%), linear-gradient(95deg, #FC8745 0%, #FFB78E 45.83%, #ED7B3B 100%);
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.50) inset;
+    width: 207px;
+    height: 54px;
+    flex-shrink: 0;
+    border-color: 1px solid #863D15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.white-text {
+    color: white;
+}

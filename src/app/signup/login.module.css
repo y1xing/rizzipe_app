@@ -1,0 +1,101 @@
+.heroHalf {
+    width: 100%;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    padding: 1rem;
+    height: 100%;
+
+}
+
+
+.heroTexts h1:first-child{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+
+.heroTexts h1:nth-child(2){
+    color: #000;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+
+
+}
+
+.heroTexts h1:nth-child(3){
+    color: #000;
+    font-family: Nanum Pen;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.loginContainer {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    justify-content: center;
+    flex-shrink: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.loginTexture {
+    position: absolute;
+    top: 3px;
+
+    width: 98%;
+    z-index: 0;
+
+}
+
+.noWordLogo {
+    width: 100px;
+    height: 120px;
+    z-index: 2;
+
+}
+
+.socialLoginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+
+}
+
+.signInButton {
+    border-radius: 70px;
+    border: 1px solid #863D15;
+    background: radial-gradient(37.50% 37.50% at 58.13% 90.22%, rgba(222, 169, 66, 0.20) 0%, rgba(171, 133, 58, 0.00) 100%), linear-gradient(95deg, #FC8745 0%, #FFB78E 45.83%, #ED7B3B 100%);
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.50) inset;
+    width: 90%;
+    padding: 1rem;
+    margin-top: 2rem;
+
+}

@@ -1,0 +1,9 @@
+.textarea {
+    width: 600px;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 18px;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(252, 135, 69, 0.10);
+    padding: 1rem;
+}

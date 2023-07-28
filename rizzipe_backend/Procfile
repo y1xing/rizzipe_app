@@ -1,0 +1,4 @@
+integration: honcho run python3 integration.py
+image_classification: honcho run python3 image_classification.py
+recipe_generation: honcho run python3 recipe_generator.py
+database: honcho run python3 database.py

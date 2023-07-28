@@ -1,0 +1,75 @@
+.foodImage {
+    border-radius: 30px;
+}
+
+.ingredientsContainer {
+    border-radius: 35px;
+    background: #FFF5EF;
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+
+}
+
+.ingredient {
+    margin-bottom: 1.5rem;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nutrientContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFF0E7;
+    border-radius: 500px;
+    width: 100px;
+    padding: 1rem;
+    aspect-ratio: 1;
+    width: 150px
+
+
+}
+
+.imageContainer {
+    background: linear-gradient(90deg, #f2f2f2 0px, #e6e6e6 50%, #f2f2f2 100%);
+    background-size: 200% 100%;
+    width: 590px;
+    height: 590px;
+    border-radius: 30px;
+}
+
+
+.skeletonLoader {
+    background-color: #f2f2f2;
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: -200px 0; }
+    100% { background-position: 200px 0; }
+}
+
+.generateBtn {
+    border-radius: 70px;
+    border: 1px solid #863D15;
+    background: radial-gradient(37.50% 37.50% at 58.13% 90.22%, rgba(222, 169, 66, 0.20) 0%, rgba(171, 133, 58, 0.00) 100%), linear-gradient(95deg, #FC8745 0%, #FFB78E 45.83%, #ED7B3B 100%);
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.50) inset;
+    width: 207px;
+    height: 54px;
+    flex-shrink: 0;
+    border-color: 1px solid #863D15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.white-text {
+    color: white;
+}
