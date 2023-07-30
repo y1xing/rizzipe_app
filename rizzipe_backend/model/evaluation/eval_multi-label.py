@@ -5,11 +5,11 @@ import torch
 from torchvision import transforms as T
 from torch.utils.data import DataLoader
 
-from model.IngredientsConfiguration import CFG
-from model.IngredientsDataset import IngredientsDataset
-from model.IngredientsPredictor import IngredientsPredictor
-from model.IngredientsEvaluator import IngredientsEvaluator
-from model.ResourceMonitor import Monitor
+from rizzipe_backend.model.IngredientsConfiguration import CFG
+from rizzipe_backend.model.IngredientsDataset import IngredientsDataset
+from rizzipe_backend.model.IngredientsPredictor import IngredientsPredictor
+from rizzipe_backend.model.IngredientsEvaluator import IngredientsEvaluator
+from rizzipe_backend.model.ResourceMonitor import Monitor
 
 
 def run():

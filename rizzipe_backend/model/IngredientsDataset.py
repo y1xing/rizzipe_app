@@ -4,7 +4,7 @@ import pandas as pd
 from PIL import Image
 from torch.utils.data import Dataset
 
-from classes.IngredientsUtility import encode_label
+from IngredientsUtility import encode_label
 
 
 # ingredients dataset to load images with multi-labels
