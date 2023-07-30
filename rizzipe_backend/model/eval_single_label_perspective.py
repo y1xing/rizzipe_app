@@ -14,9 +14,9 @@ from rizzipe_backend.model.ResourceMonitor import Monitor
 def run():
     warnings.filterwarnings("ignore")
 
-    # custom transforms for test datasets (randomly blur the images)
+    # custom transforms for test datasets (change the image to a random perspective)
     test_transform = T.Compose([
-        T.GaussianBlur(kernel_size=(19, 23), sigma=(20, 25)),
+        T.RandomPerspective(distortion_scale=0.6, p=1.0),
         T.Resize(size=(CFG.img_size, CFG.img_size)),
         T.ToTensor(),
         T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
@@ -31,7 +31,7 @@ def run():
     print(f"No. of test batches loaded: {len(test_loader)}")
 
     # initialise model and custom weights
-    custom_weights = torch.load("../IngredientsModel.pt", map_location=CFG.device)
+    custom_weights = torch.load("IngredientsModel.pt", map_location=CFG.device)
     predictor = IngredientsPredictor(model=CFG.model,
                                      device=CFG.device,
                                      weights=custom_weights,
@@ -65,8 +65,8 @@ def run():
     balanced_accuracy = evaluator.balanced_accuracy_multilabel(all_lbls, all_preds)
     uncertainty_entropy = evaluator.uncertainty_entropy(all_probs.numpy())
     classification_report = evaluator.classification_report_multilabel(all_lbls, all_preds)
-    evaluator.confusion_matrix_multilabel(all_lbls, all_preds, "./conf_matrix/conf-matrix_single-label_blur.pdf")
-    evaluator.auroc(all_lbls, all_probs, "./auroc/auroc_single-label_blur.pdf")
+    evaluator.confusion_matrix_multilabel(all_lbls, all_preds, "./conf_matrix/conf-matrix_single-label_perspective.pdf")
+    evaluator.auroc(all_lbls, all_probs, "./auroc/auroc_single-label_perspective.pdf")
 
     # print accuracy score
     print(f"Accuracy score: {accuracy}\n")

@@ -2,36 +2,40 @@ import warnings
 
 import numpy as np
 import torch
-from torchvision import transforms as T, datasets
+from torchvision import transforms as T
 from torch.utils.data import DataLoader
 
-from rizzipe_backend.model.IngredientsConfiguration import CFG
-from rizzipe_backend.model.IngredientsPredictor import IngredientsPredictor
-from rizzipe_backend.model.IngredientsEvaluator import IngredientsEvaluator
-from rizzipe_backend.model.ResourceMonitor import Monitor
+from IngredientsConfiguration import CFG
+from IngredientsDataset import IngredientsDataset
+from IngredientsPredictor import IngredientsPredictor
+from IngredientsEvaluator import IngredientsEvaluator
+from ResourceMonitor import Monitor
 
 
 def run():
     warnings.filterwarnings("ignore")
 
-    # custom transforms for test datasets (change the image to a random perspective)
+    # custom transforms for test datasets
     test_transform = T.Compose([
-        T.RandomPerspective(distortion_scale=0.6, p=1.0),
         T.Resize(size=(CFG.img_size, CFG.img_size)),
         T.ToTensor(),
         T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ])
 
-    # load and transform test dataset
-    test_data = datasets.ImageFolder(CFG.test_path, transform=test_transform)
+    # file paths
+    root_path = "../ingredients-multilabel-25_dataset"
+    csv_fname = "ingredients-multilabel-25_labels.csv"
+
+    # load and transform multi-label test dataset
+    test_data = IngredientsDataset(csv_fname, root_path, CFG.idx_to_classes, transform=test_transform)
     print(f"No. of test samples loaded: {len(test_data)}")
 
-    # load test dataset into batches
+    # load multi-label test dataset into batches
     test_loader = DataLoader(test_data, batch_size=CFG.batch_size, shuffle=True)
     print(f"No. of test batches loaded: {len(test_loader)}")
 
     # initialise model and custom weights
-    custom_weights = torch.load("../IngredientsModel.pt", map_location=CFG.device)
+    custom_weights = torch.load("IngredientsModel.pt", map_location=CFG.device)
     predictor = IngredientsPredictor(model=CFG.model,
                                      device=CFG.device,
                                      weights=custom_weights,
@@ -44,7 +48,7 @@ def run():
     monitor = Monitor(0.5)
 
     # predict on test dataset batches
-    all_logits, all_probs, all_preds, all_lbls = predictor.predict_batches(test_loader)
+    all_logits, all_probs, all_preds, all_lbls = predictor.predict_batches_multilabel(test_loader)
 
     # end thread for monitoring of system resources
     max_cpu, max_mem, max_gpu = monitor.stop()
@@ -65,8 +69,8 @@ def run():
     balanced_accuracy = evaluator.balanced_accuracy_multilabel(all_lbls, all_preds)
     uncertainty_entropy = evaluator.uncertainty_entropy(all_probs.numpy())
     classification_report = evaluator.classification_report_multilabel(all_lbls, all_preds)
-    evaluator.confusion_matrix_multilabel(all_lbls, all_preds, "./conf_matrix/conf-matrix_single-label_perspective.pdf")
-    evaluator.auroc(all_lbls, all_probs, "./auroc/auroc_single-label_perspective.pdf")
+    evaluator.confusion_matrix_multilabel(all_lbls, all_preds, "./conf_matrix/conf-matrix_multi-label.pdf")
+    evaluator.auroc(all_lbls, all_probs, "./auroc/auroc_multi-label.pdf")
 
     # print accuracy score
     print(f"Accuracy score: {accuracy}\n")

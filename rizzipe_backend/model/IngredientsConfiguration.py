@@ -24,7 +24,7 @@ class CFG:
 	num_classes = len(idx_to_classes)
 
 	# dataset filepaths
-	root_path = "../datasets/ingredients-136_dataset"
+	root_path = "datasets/ingredients-136_dataset"
 	train_path = f"{root_path}/train/"
 	valid_path = f"{root_path}/val/"
 	test_path = f"{root_path}/test/"

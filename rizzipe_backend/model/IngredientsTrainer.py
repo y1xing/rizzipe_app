@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 
 # trainer class to train and evaluate model
