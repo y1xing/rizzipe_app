@@ -97,7 +97,7 @@ Individuals face difficulty in creating meals which are both varied and deliciou
 [![Torch][Torch]][Torch-url] 
 [![Supabase][Supabase]][Supabase-url]
 
-APIS
+APIS:<br> 
 [![Edamam][Edamam]][Edamam-url]
 [![OpenAI][OpenAI]][OpenAI-url]
 
@@ -121,7 +121,7 @@ This is a list of things you need to use the software and where to install them.
 
 ### Installation
 
-_This is an example of how to list things you need to use the software and how to install them._
+_This is an example of how to setup the web application on your localhost._
 
 Running Rizzipe on localhost
 
