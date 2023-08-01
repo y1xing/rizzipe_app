@@ -182,9 +182,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Cheng Yi Xing - 2201626@sit.singaporetech.edu.sg
+Wong Yu Fei - 2201589@sit.singaporetech.edu.sg
+Davin Lim - 2201898@sit.singaporetech.edu.sg
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/y1xing/rizzipe_app](https://github.com/y1xing/rizzipe_app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
