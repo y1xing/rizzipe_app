@@ -49,7 +49,10 @@ def classify_image_post():
 			batch = pred_transform(img).unsqueeze(0)
 
 			# # predict on image
-			img_logits, img_probs, img_preds = predictor.predict(batch, threshold=0.01)
+			img_logits, img_probs, img_preds = predictor.predict(batch, threshold=0.015)
+
+			print("img_preds: ", img_preds)
+			print("img_probs: ", img_probs)
 
 			# translate one hot indexed predictions to class labels
 			predicted_classes = decode_target(img_preds.squeeze(0), CFG.idx_to_classes)

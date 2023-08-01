@@ -3,7 +3,7 @@ from torchvision import transforms as T
 import torch
 
 from .IngredientsUtility import *
-from .IngredientsConfiguration import CFG
+from .IngredientsConfigurationDeployment import CFG
 from .IngredientsPredictor import IngredientsPredictor
 
 pred_transform = T.Compose([

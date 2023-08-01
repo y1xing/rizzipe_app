@@ -19,7 +19,7 @@ IMAGE_CLASSIFICATION_URL = 'http://localhost:5001/classify_image'
 # Default route
 @app2.route('/')
 def index():
-	return EDAMAN_API
+	return "Hello World! This is recipe generator microservice."
 
 
 # Post request to receive ingredients and return recipe

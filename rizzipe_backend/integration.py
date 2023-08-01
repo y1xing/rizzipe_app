@@ -78,7 +78,7 @@ def analyze_food_description(description):
 # Default route
 @integration_app.route('/')
 def index():
-	return OPEN_AI_API_KEY
+	return "Hello World! This is integration microservice."
 
 
 # Post route to receive the image in the form of base64 string and return the recipe to the frontend
