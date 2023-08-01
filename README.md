@@ -107,28 +107,61 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+1. NodeJS [NodeJS](https://nodejs.org/en) 
+2. Git [Git](https://git-scm.com/downloads)
+3. Python3 [Python](https://www.python.org/downloads/)
 
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+Running Rizzipe on localhost
+
+1. Clone the repository
+```sh
+  git clone https://github.com/y1xing/rizzipe_app.git
+```
+2. Navigate to rizzipe_backend, create a .env file and add the respective API keys as follows
+```js
+  OPEN_AI_API_KEY = 'YOUR_API_KEY'
+  EDAMAN_API_KEY= 'YOUR_API_KEY'
+  NEXT_PUBLIC_SUPABASE_URL = 'SUPABASE_URL'
+  NEXT_PUBLIC_SUPABASE_ANON_KEY= 'YOUR_API_KEY' 
+```
+3. Install required packages
+```sh
+  pip install -r requirements.txt
+```
+4. Open the Procfile file in any python supported IDE.If needed, change python3 to python if your environment uses “python” to run the codes
+```sh
+  integration
+  honcho run python3 integration.py
+  honcho run python3 image_classification.py
+  honcho run python3 recipe_generator.py
+  honcho run python3 database.py
+```
+5. Start the microservices
+```sh
+  honcho start
+```
+6. Navigate to rizzipe_app (root directory)
+7. Create an .env.local file and insert your Supabase url and API key
+```sh
+NEXT_PUBLIC_SUPABASE_URL = 'SUPABASE_URL'
+NEXT_PUBLIC_SUPABASE_ANON_KEY= 'YOUR_API_KEY' 
+```
+8. Install dependencies
+```sh
+  npm install
+```
+9. Start the application
+```
+  npm run dev
+```
+10. View the web application
+```sh
+http:localhost:3000/generate
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
