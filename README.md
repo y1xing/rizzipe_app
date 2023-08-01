@@ -171,6 +171,7 @@ http:localhost:3000/generate
 ```
 
 <h2>Running the evaluator</h2>
+Evaluation of an efficientnet_b0 model trained on images scraped from Google.
 
 1. Navigate to the model directory
 ```sh
@@ -239,7 +240,7 @@ Project Link: [https://github.com/y1xing/rizzipe_app](https://github.com/y1xing/
 
 Below is a list of acknowledgments and attributions to programs we have utilized in our project
 
-* [Oh Yi Cong's Google Image Scraper](https://github.com/ohyicong/Google-Image-Scraper)
+* [Oh Yi Cong's Google Image Scraper](https://github.com/ohyicong/Google-Image-Scraper) - Utilized to collect data for training of the model.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
