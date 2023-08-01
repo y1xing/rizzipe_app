@@ -22,7 +22,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -95,8 +95,9 @@ Individuals face difficulty in creating meals which are both varied and deliciou
 [![React][React.js]][React-url]
 [![Python][Python]][Python-url]
 [![Torch][Torch]][Torch-url] 
-[![Pillow][Pillow]][Pillow-url] 
 [![Supabase][Supabase]][Supabase-url]
+
+APIS
 [![Edamam][Edamam]][Edamam-url]
 [![OpenAI][OpenAI]][OpenAI-url]
 
@@ -257,7 +258,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [forks-url]: https://github.com/y1xing/rizzipe_app/network/members
 [stars-shield]: https://img.shields.io/github/stars/y1xing/rizzipe_app.svg?style=for-the-badge
 [stars-url]: https://github.com/y1xing/rizzipe_app/stargazers
-[issues-shield]: https://img.shields.io/github/issues/y1xing/rizzipe_app.svg.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/y1xing/rizzipe_app.svg?style=for-the-badge
 [issues-url]: https://github.com/y1xing/rizzipe_app/issues
 [license-shield]: https://img.shields.io/github/license/y1xing/rizzipe_app.svg.svg?style=for-the-badge
 [license-url]: https://github.com/y1xing/rizzipe_app/blob/main/LICENSE.txt
@@ -269,11 +270,9 @@ Use this space to list resources you find helpful and would like to give credit 
 [React-url]: https://reactjs.org/
 [Python]: https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/ 
-[Torch]: https://img.shields.io/badge/Pytorch-red
+[Torch]: https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white
 [Torch-url]: https://pytorch.org/
-[Pillow]: https://img.shields.io/badge/Pillow-8A2BE2
-[Pillow-url]: https://pypi.org/project/Pillow/
-[Supabase]: https://img.shields.io/badge/Supabase-8A2BE2
+[Supabase]: https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white
 [Supabase-url]: https://supabase.com/
 [Edamam]: https://img.shields.io/badge/Edamam-8A2BE2
 [Edamam-url]: https://www.edamam.com/
