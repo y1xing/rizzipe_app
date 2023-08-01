@@ -182,9 +182,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Cheng Yi Xing - 2201626@sit.singaporetech.edu.sg
-Wong Yu Fei - 2201589@sit.singaporetech.edu.sg
-Davin Lim - 2201898@sit.singaporetech.edu.sg
+Cheng Yi Xing - 2201626@sit.singaporetech.edu.sg <br>
+Wong Yu Fei - 2201589@sit.singaporetech.edu.sg <br>
+Davin Lim - 2201898@sit.singaporetech.edu.sg 
 
 Project Link: [https://github.com/y1xing/rizzipe_app](https://github.com/y1xing/rizzipe_app)
 
