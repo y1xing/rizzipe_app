@@ -144,8 +144,7 @@ Running Rizzipe on localhost
 ```sh
   honcho start
 ```
-6. Navigate to rizzipe_app (root directory)
-7. Create an .env.local file and insert your Supabase url and API key
+6. Navigate to rizzipe_app (root directory) and create a .env.local file and insert your Supabase URL and API key
 ```sh
 NEXT_PUBLIC_SUPABASE_URL = 'SUPABASE_URL'
 NEXT_PUBLIC_SUPABASE_ANON_KEY= 'YOUR_API_KEY' 
