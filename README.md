@@ -123,7 +123,7 @@ This is a list of things you need to use the software and where to install them.
 
 _This is an example of how to setup the web application on your localhost._
 
-Running Rizzipe on localhost
+<h2>Running Rizzipe on localhost</h2>
 
 1. Clone the repository
 ```sh
@@ -168,6 +168,26 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY= 'YOUR_API_KEY'
 10. View the web application
 ```sh
 http:localhost:3000/generate
+```
+
+<h2>Running the evaluator</h2>
+
+1. Navigate to the model directory
+```sh
+cd [local file path]/rizzipe_app/rizzipe_backend/model
+```
+2. Install the dependencies
+```sh
+pip install -r eval_requirements.txt
+```
+3. Run any of the evaluation codes in any Python-supported IDEs.
+```sh
+eval_single-label.py
+eval_single-label_color-jitter.py
+eval_single-label_blur.py
+eval_single-label_rotation.py
+eval_single_label_perspective.py
+eval_single-label_erase.py
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
