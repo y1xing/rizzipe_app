@@ -19,7 +19,7 @@ class CFG:
 	img_size = 224
 
 	# load class encoding and decoding csv (for prediction)
-	df = pd.read_csv("./idx_to_classes.csv")
+	df = pd.read_csv("idx_to_classes.csv")
 	idx_to_classes = [cls for cls in df["class"]]
 	num_classes = len(idx_to_classes)
 
