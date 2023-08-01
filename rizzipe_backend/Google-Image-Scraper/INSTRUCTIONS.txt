@@ -1,0 +1,12 @@
+MODIFY variables to scrape different images 
+
+2 ways of running:
+1st way:
+1. Navigate to folder of Google-Image-Scraper
+2. Run main.py from cmd line
+3. Run dir_formatter.py
+
+
+2nd way:
+1. Navigate to folder of Google-Image-Scraper
+2. Run run_in_order.bat
